@@ -116,6 +116,18 @@ def coletar():
         nome = jogo.get("name")
         s = stats.get(uid, {})
         jogando = s.get("playing")
+        visitas = s.get("visits")
+
+        chave_visitas = f"visitas_{uid}"
+        registro = cache.get(chave_visitas) or {}
+        ultima = registro.get("ultima")
+        novas = registro.get("novas")
+        if visitas is not None:
+            anterior_visitas = registro.get("visitas")
+            if anterior_visitas is not None and visitas > anterior_visitas:
+                ultima = agora_texto()
+                novas = visitas - anterior_visitas
+            cache[chave_visitas] = {"visitas": visitas, "ultima": ultima, "novas": novas}
 
         serie = historico.setdefault(str(uid), [])
         if jogando is not None:
@@ -126,7 +138,9 @@ def coletar():
             "id": uid,
             "nome": nome,
             "jogando": jogando,
-            "visitas": s.get("visits"),
+            "visitas": visitas,
+            "ultima_visita": ultima,
+            "ultima_visita_novas": novas,
             "historico": serie,
             "places": [],
             "erro": None,
