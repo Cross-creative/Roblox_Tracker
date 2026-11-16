@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monitor do grupo Roblox</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --papel: #e7eceF;
+  --tinta: #14202b;
+  --suave: #566775;
+  --linha: #c3cdd4;
+  --fundo-linha: #dce3e8;
+  --cobalto: #2b4bff;
+  --ambar: #a96a0c;
+  --verde: #137a65;
+  --vermelho: #b83227;
+  --titulo: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+  --texto: "Source Sans 3", "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --papel: #121a22;
+    --tinta: #e6edf2;
+    --suave: #8fa1af;
+    --linha: #2c3a46;
+    --fundo-linha: #1a2530;
+    --cobalto: #7d92ff;
+    --ambar: #e0a24a;
+    --verde: #4fc6a9;
+    --vermelho: #ef7b6f;
+  }
+}
+* { box-sizing: border-box; }
+html { background: var(--papel); }
+body {
+  margin: 0;
+  color: var(--tinta);
+  font-family: var(--texto);
+  font-size: 17px;
+  line-height: 1.5;
+}
+a { color: inherit; }
+button {
+  font: inherit;
+  color: var(--tinta);
+  background: transparent;
+  border: 2px solid var(--tinta);
+  padding: 8px 16px;
+  cursor: pointer;
+}
+button:hover:not(:disabled) { background: var(--tinta); color: var(--papel); }
+button:disabled { opacity: .5; cursor: default; }
+:focus-visible { outline: 3px solid var(--cobalto); outline-offset: 2px; }
+
+.pagina {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 56px;
+}
+.topo { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; }
+.hero-numero {
+  font-family: var(--titulo);
+  font-weight: 800;
+  font-size: clamp(72px, 14vw, 156px);
+  line-height: .9;
+  letter-spacing: -.03em;
+}
+.hero-rotulo { color: var(--suave); margin-top: 8px; }
+.hero-spark { width: min(420px, 100%); height: 64px; }
+.controles { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; color: var(--suave); }
+
+h2 { font-family: var(--titulo); font-weight: 800; font-size: 30px; line-height: 1.1; margin: 0; letter-spacing: -.01em; }
+h3 { font-family: var(--titulo); font-weight: 500; font-size: 20px; margin: 0; }
+
+.jogo { padding-top: 32px; margin-top: 32px; border-top: 2px solid var(--tinta); }
+.jogo:first-child { margin-top: 0; }
+.jogo-cab { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; }
+.jogo-meta { color: var(--suave); margin-top: 4px; }
+.jogo-numeros { display: flex; gap: 32px; align-items: flex-end; }
+.numero-g { font-family: var(--titulo); font-weight: 800; font-size: 40px; line-height: 1; }
+.numero-rotulo { color: var(--suave); font-size: 15px; }
+.jogo-spark { width: 160px; height: 40px; display: block; margin-top: 6px; }
+
+.places { margin-top: 20px; }
+.place { display: grid; grid-template-columns: 72px 1fr auto; gap: 16px; align-items: center; padding: 14px 0; border-top: 1px solid var(--linha); }
+.place img, .place .sem-img { width: 72px; height: 72px; object-fit: cover; background: var(--fundo-linha); display: block; }
+.place-nome { font-weight: 600; }
+.place-sub { color: var(--suave); font-size: 15px; overflow-wrap: anywhere; }
+.place-data { text-align: right; font-size: 15px; color: var(--suave); }
+.place-data strong { display: block; color: var(--tinta); font-weight: 600; }
+
+.erro { margin: 16px 0 0; padding: 12px 14px; border-left: 4px solid var(--vermelho); background: var(--fundo-linha); }
+
+.feed { position: sticky; top: 24px; align-self: start; max-height: calc(100vh - 48px); overflow: auto; }
+.feed ol { list-style: none; margin: 20px 0 0; padding: 0 0 0 20px; border-left: 2px solid var(--linha); }
+.feed li { position: relative; padding: 0 0 22px; }
+.feed li::before {
+  content: "";
+  position: absolute;
+  left: -27px; top: 7px;
+  width: 12px; height: 12px;
+  background: var(--cor, var(--suave));
+  border: 3px solid var(--papel);
+  border-radius: 50%;
+}
+.ev-texto { font-weight: 600; }
+.ev-sub { color: var(--suave); font-size: 15px; }
+.vazio { color: var(--suave); margin-top: 16px; }
+
+@media (max-width: 900px) {
+  .pagina { grid-template-columns: 1fr; gap: 40px; padding: 24px 16px 64px; }
+  .feed { position: static; max-height: none; }
+  .place { grid-template-columns: 56px 1fr; }
+  .place img, .place .sem-img { width: 56px; height: 56px; }
+  .place-data { grid-column: 2; text-align: left; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero-numero { transition: opacity .3s; }
+  .hero-numero.atualizando { opacity: .4; }
+}
+</style>
+</head>
+<body>
+<main class="pagina">
+  <header class="topo">
+    <div>
+      <div class="hero-numero" id="total">–</div>
+      <div class="hero-rotulo" id="total-rotulo">Jogadores online agora no grupo</div>
+    </div>
+    <svg class="hero-spark" id="total-spark" viewBox="0 0 420 64" preserveAspectRatio="none" role="img" aria-label="Variação de jogadores online"></svg>
+    <div class="controles">
+      <span id="status">Carregando…</span>
+    </div>
+  </header>
+
+  <section id="jogos" aria-label="Jogos do grupo"></section>
+
+  <aside class="feed" aria-label="Mudanças detectadas">
+    <h2>Mudanças detectadas</h2>
+    <div id="feed"></div>
+  </aside>
+</main>
+
+<script>
+const CORES = {
+  patch: "var(--cobalto)",
+  nome: "var(--ambar)",
+  descricao: "var(--suave)",
+  "place+": "var(--verde)",
+  "place-": "var(--vermelho)"
+};
+
+let ultimo = null;
+
+function esc(valor) {
+  return String(valor ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+function numero(n) {
+  if (n === null || n === undefined) return "–";
+  return Number(n).toLocaleString("pt-BR");
+}
+
+function spark(serie, largura, altura) {
+  if (!serie || serie.length < 2) return "";
+  const valores = serie.map(p => p[1]);
+  const min = Math.min(...valores);
+  const max = Math.max(...valores);
+  const faixa = max - min || 1;
+  const pontos = serie.map((p, i) => {
+    const x = (i / (serie.length - 1)) * largura;
+    const y = altura - 4 - ((p[1] - min) / faixa) * (altura - 8);
+    return x.toFixed(1) + "," + y.toFixed(1);
+  }).join(" ");
+  return `<polyline points="${pontos}" fill="none" stroke="var(--cobalto)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>`;
+}
+
+function somarSeries(jogos) {
+  const mapa = new Map();
+  jogos.forEach(j => (j.historico || []).forEach(([t, n]) => {
+    const chave = Math.round(t / 300);
+    mapa.set(chave, (mapa.get(chave) || 0) + n);
+  }));
+  return [...mapa.entries()].sort((a, b) => a[0] - b[0]).map(([t, n]) => [t, n]);
+}
+
+function renderPlace(p) {
+  const img = p.imagem ? `<img src="${esc(p.imagem)}" alt="" loading="lazy">` : `<div class="sem-img"></div>`;
+  return `
+    <div class="place">
+      ${img}
+      <div>
+        <div class="place-nome">${esc(p.nome)}</div>
+        <div class="place-sub">ID ${esc(p.id)}</div>
+      </div>
+      <div class="place-data">
+        <strong>${esc(p.atualizado || "Sem dados")}</strong>
+        Último patch · criado em ${esc(p.criado || "–")}
+      </div>
+    </div>`;
+}
+
+function renderJogo(j) {
+  const places = j.places.map(renderPlace).join("");
+  const erro = j.erro ? `<p class="erro">${esc(j.erro)}</p>` : "";
+  return `
+    <article class="jogo">
+      <div class="jogo-cab">
+        <div>
+          <h2>${esc(j.nome)}</h2>
+          <div class="jogo-meta">Universe ID ${esc(j.id)} · ${j.places.length} ${j.places.length === 1 ? "place" : "places"}</div>
+        </div>
+        <div class="jogo-numeros">
+          <div>
+            <div class="numero-g">${numero(j.jogando)}</div>
+            <div class="numero-rotulo">jogando agora</div>
+            <svg class="jogo-spark" viewBox="0 0 160 40" preserveAspectRatio="none" aria-hidden="true">${spark(j.historico, 160, 40)}</svg>
+          </div>
+          <div>
+            <div class="numero-g">${numero(j.visitas)}</div>
+            <div class="numero-rotulo">visitas totais</div>
+          </div>
+        </div>
+      </div>
+      ${erro}
+      <div class="places">${places}</div>
+    </article>`;
+}
+
+function renderFeed(eventos) {
+  if (!eventos.length) {
+    return `<p class="vazio">Nenhuma mudança detectada ainda. Novos patches, nomes e descrições aparecem aqui.</p>`;
+  }
+  const itens = eventos.map(e => `
+    <li style="--cor:${CORES[e.tipo] || "var(--suave)"}">
+      <div class="ev-texto">${esc(e.texto)}</div>
+      <div class="ev-sub">${esc(e.jogo)} · ${esc(e.quando)}</div>
+    </li>`).join("");
+  return `<ol>${itens}</ol>`;
+}
+
+function textoStatus(d) {
+  if (d.erro) return "Erro na última verificação: " + d.erro;
+  if (d.verificando) return "Verificando agora…";
+  if (!d.atualizado_em) return "Fazendo a primeira verificação…";
+  return `Atualizado em ${d.atualizado_em}`;
+}
+
+function desenhar(d) {
+  ultimo = d;
+  const total = d.jogos.reduce((s, j) => s + (Number(j.jogando) || 0), 0);
+  document.getElementById("total").textContent = d.jogos.length ? numero(total) : "–";
+  document.getElementById("total-spark").innerHTML = spark(somarSeries(d.jogos), 420, 64);
+  document.getElementById("jogos").innerHTML = d.jogos.length
+    ? d.jogos.map(renderJogo).join("")
+    : `<p class="vazio">Aguardando os primeiros dados do grupo ${esc(d.grupo)}.</p>`;
+  document.getElementById("feed").innerHTML = renderFeed(d.eventos || []);
+  document.getElementById("status").textContent = textoStatus(d);
+}
+
+async function carregar() {
+  try {
+    const res = await fetch("data.json?t=" + Date.now(), { cache: "no-store" });
+    desenhar(await res.json());
+  } catch (e) {
+    document.getElementById("status").textContent = "Não foi possível falar com o servidor.";
+  }
+}
+
+setInterval(() => { if (ultimo) document.getElementById("status").textContent = textoStatus(ultimo); }, 1000);
+setInterval(carregar, 60000);
+carregar();
+</script>
+</body>
+</html>
