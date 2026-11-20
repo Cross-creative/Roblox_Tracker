@@ -1,31 +1,31 @@
 {
   "4588604953": {
-    "updated": "2026-11-08T19:05:16.221Z",
+    "updated": "2026-11-20T21:21:34.813Z",
     "name": "[🎃] Criminality",
     "description": "The Witching Hour is upon us!\n\nCriminality is a free roam fighting game featuring punishing and unpredictable gameplay with advanced combat mechanics and extensive weaponry. You are in SECTOR-07, the most hostile and uncontrollable sector exiled from civilized society. Arm yourselves, and prepare for the unexpected. \n\nPremium users get 30% allowance bonus! \nJoin the group for 10% extra income!\n\nNew code @ 400k likes \n\n Use !cmds in the chat to view commands in your private server"
   },
   "8343259840": {
-    "updated": "2026-11-15T19:29:02.157Z",
+    "updated": "2026-11-20T21:21:54.297Z",
     "name": "Criminality: Casual",
     "description": ""
   },
   "15169303036": {
-    "updated": "2026-11-15T19:29:43.42Z",
+    "updated": "2026-11-20T21:22:37.558Z",
     "name": "Criminality: Standard",
     "description": ""
   },
   "15169306359": {
-    "updated": "2026-11-15T19:30:29.536Z",
+    "updated": "2026-11-20T21:23:36.09Z",
     "name": "Criminality: Brawl",
     "description": ""
   },
   "15169310267": {
-    "updated": "2026-11-15T19:31:20.931Z",
+    "updated": null,
     "name": "Criminality: Infection",
     "description": ""
   },
   "15169316384": {
-    "updated": "2026-11-15T19:32:05.528Z",
+    "updated": "2026-11-20T21:24:59.038Z",
     "name": "Criminality: M-Casual",
     "description": ""
   },
@@ -38,7 +38,7 @@
     "15169316384"
   ],
   "7198699370": {
-    "updated": "2026-11-20T12:59:29.791Z",
+    "updated": "2026-11-20T20:48:31.092Z",
     "name": "Design",
     "description": ""
   },
@@ -74,7 +74,7 @@
     "15134181243"
   ],
   "15186883533": {
-    "updated": "2026-11-08T19:02:23.235Z",
+    "updated": "2026-11-20T21:23:33.675Z",
     "name": "Criminality: Testing",
     "description": ""
   },
@@ -94,7 +94,7 @@
     "description": ""
   },
   "116462129824449": {
-    "updated": "2026-10-31T04:38:57.477Z",
+    "updated": null,
     "name": "Criminality Testing: Standard",
     "description": ""
   },
@@ -106,7 +106,7 @@
     "116462129824449"
   ],
   "18221610510": {
-    "updated": "2026-11-15T22:14:49.973Z",
+    "updated": "2026-11-20T21:22:52.23Z",
     "name": "Criminality: LDB",
     "description": ""
   },
@@ -122,7 +122,7 @@
     "132651798864647"
   ],
   "107009388501312": {
-    "updated": "2026-11-20T05:09:34.168Z",
+    "updated": "2026-11-20T22:44:08.529Z",
     "name": "Map Demo",
     "description": ""
   },
@@ -146,7 +146,7 @@
     "129948188877122"
   ],
   "113070928673202": {
-    "updated": "2026-11-19T03:14:27.825Z",
+    "updated": "2026-11-20T18:15:24.022Z",
     "name": "CrimV3: TZ Branch",
     "description": ""
   },
@@ -194,7 +194,7 @@
     "81133102802127"
   ],
   "129199476665303": {
-    "updated": "2026-11-19T16:50:54.238Z",
+    "updated": "2026-11-20T21:29:37.989Z",
     "name": "CrimV3: Main",
     "description": ""
   },
@@ -210,7 +210,7 @@
     "118389764621848"
   ],
   "118003947305968": {
-    "updated": "2026-11-20T16:43:54.29Z",
+    "updated": "2026-11-20T22:31:43.7Z",
     "name": "CrimV3: FD Branch",
     "description": ""
   },
@@ -258,6 +258,78 @@
     "129001805530562"
   ],
   "_eventos": [
+    {
+      "quando": "20/11/2026 19:56:05",
+      "tipo": "patch",
+      "texto": "Novo patch em CrimV3: FD Branch",
+      "jogo": "CrimV3: FD Branch"
+    },
+    {
+      "quando": "20/11/2026 19:56:03",
+      "tipo": "patch",
+      "texto": "Novo patch em CrimV3: Main",
+      "jogo": "CrimV3: Main"
+    },
+    {
+      "quando": "20/11/2026 19:55:57",
+      "tipo": "patch",
+      "texto": "Novo patch em CrimV3: TZ Branch",
+      "jogo": "CrimV3: TZ Branch"
+    },
+    {
+      "quando": "20/11/2026 19:55:54",
+      "tipo": "patch",
+      "texto": "Novo patch em Map Demo",
+      "jogo": "Map Demo"
+    },
+    {
+      "quando": "20/11/2026 19:55:51",
+      "tipo": "patch",
+      "texto": "Novo patch em Criminality: LDB",
+      "jogo": "Criminality: LDB"
+    },
+    {
+      "quando": "20/11/2026 19:55:49",
+      "tipo": "patch",
+      "texto": "Novo patch em Criminality: Testing",
+      "jogo": "Criminality: Testing"
+    },
+    {
+      "quando": "20/11/2026 19:55:45",
+      "tipo": "patch",
+      "texto": "Novo patch em Design",
+      "jogo": "Design"
+    },
+    {
+      "quando": "20/11/2026 19:55:44",
+      "tipo": "patch",
+      "texto": "Novo patch em Criminality: M-Casual",
+      "jogo": "[🎃] Criminality"
+    },
+    {
+      "quando": "20/11/2026 19:55:43",
+      "tipo": "patch",
+      "texto": "Novo patch em Criminality: Brawl",
+      "jogo": "[🎃] Criminality"
+    },
+    {
+      "quando": "20/11/2026 19:55:43",
+      "tipo": "patch",
+      "texto": "Novo patch em Criminality: Standard",
+      "jogo": "[🎃] Criminality"
+    },
+    {
+      "quando": "20/11/2026 19:55:42",
+      "tipo": "patch",
+      "texto": "Novo patch em Criminality: Casual",
+      "jogo": "[🎃] Criminality"
+    },
+    {
+      "quando": "20/11/2026 19:55:42",
+      "tipo": "patch",
+      "texto": "Novo patch em [🎃] Criminality",
+      "jogo": "[🎃] Criminality"
+    },
     {
       "quando": "20/11/2026 13:50:43",
       "tipo": "patch",
@@ -650,6 +722,10 @@
       [
         1795193410,
         2034
+      ],
+      [
+        1795215341,
+        1973
       ]
     ],
     "2798935702": [
@@ -711,6 +787,10 @@
       ],
       [
         1795193414,
+        0
+      ],
+      [
+        1795215345,
         0
       ]
     ],
@@ -774,6 +854,10 @@
       [
         1795193416,
         0
+      ],
+      [
+        1795215346,
+        0
       ]
     ],
     "5215912394": [
@@ -835,6 +919,10 @@
       ],
       [
         1795193418,
+        0
+      ],
+      [
+        1795215348,
         0
       ]
     ],
@@ -898,6 +986,10 @@
       [
         1795193420,
         0
+      ],
+      [
+        1795215349,
+        0
       ]
     ],
     "6177286460": [
@@ -959,6 +1051,10 @@
       ],
       [
         1795193423,
+        0
+      ],
+      [
+        1795215351,
         0
       ]
     ],
@@ -1022,6 +1118,10 @@
       [
         1795193425,
         0
+      ],
+      [
+        1795215352,
+        0
       ]
     ],
     "8730819865": [
@@ -1083,6 +1183,10 @@
       ],
       [
         1795193426,
+        0
+      ],
+      [
+        1795215353,
         0
       ]
     ],
@@ -1146,6 +1250,10 @@
       [
         1795193428,
         0
+      ],
+      [
+        1795215354,
+        0
       ]
     ],
     "9203886797": [
@@ -1207,6 +1315,10 @@
       ],
       [
         1795193429,
+        0
+      ],
+      [
+        1795215355,
         0
       ]
     ],
@@ -1270,6 +1382,10 @@
       [
         1795193430,
         0
+      ],
+      [
+        1795215357,
+        0
       ]
     ],
     "9591158890": [
@@ -1331,6 +1447,10 @@
       ],
       [
         1795193432,
+        0
+      ],
+      [
+        1795215358,
         0
       ]
     ],
@@ -1394,6 +1514,10 @@
       [
         1795193433,
         0
+      ],
+      [
+        1795215359,
+        0
       ]
     ],
     "9850157277": [
@@ -1455,6 +1579,10 @@
       ],
       [
         1795193435,
+        0
+      ],
+      [
+        1795215360,
         0
       ]
     ],
@@ -1518,6 +1646,10 @@
       [
         1795193436,
         0
+      ],
+      [
+        1795215361,
+        0
       ]
     ],
     "10297958549": [
@@ -1579,6 +1711,10 @@
       ],
       [
         1795193438,
+        0
+      ],
+      [
+        1795215362,
         0
       ]
     ],
@@ -1642,6 +1778,10 @@
       [
         1795193439,
         0
+      ],
+      [
+        1795215363,
+        0
       ]
     ],
     "10411487804": [
@@ -1703,6 +1843,10 @@
       ],
       [
         1795193441,
+        0
+      ],
+      [
+        1795215364,
         0
       ]
     ],
@@ -1766,6 +1910,10 @@
       [
         1795193442,
         0
+      ],
+      [
+        1795215365,
+        0
       ]
     ],
     "10767850117": [
@@ -1827,6 +1975,10 @@
       ],
       [
         1795193443,
+        0
+      ],
+      [
+        1795215366,
         0
       ]
     ],
@@ -1890,6 +2042,10 @@
       [
         1795193445,
         0
+      ],
+      [
+        1795215367,
+        0
       ]
     ],
     "10767850508": [
@@ -1951,6 +2107,10 @@
       ],
       [
         1795193446,
+        0
+      ],
+      [
+        1795215368,
         0
       ]
     ],
@@ -2014,6 +2174,10 @@
       [
         1795193448,
         0
+      ],
+      [
+        1795215369,
+        0
       ]
     ],
     "10777061104": [
@@ -2076,13 +2240,17 @@
       [
         1795193449,
         0
+      ],
+      [
+        1795215370,
+        0
       ]
     ]
   },
   "visitas_1494262959": {
-    "visitas": 375039481,
-    "ultima": "20/11/2026 13:50:10",
-    "novas": 54074
+    "visitas": 375081529,
+    "ultima": "20/11/2026 19:55:41",
+    "novas": 42048
   },
   "visitas_2798935702": {
     "visitas": 1,
@@ -2100,9 +2268,9 @@
     "novas": null
   },
   "visitas_5235267868": {
-    "visitas": 22492,
-    "ultima": null,
-    "novas": null
+    "visitas": 22493,
+    "ultima": "20/11/2026 19:55:49",
+    "novas": 1
   },
   "visitas_6177286460": {
     "visitas": 787,
