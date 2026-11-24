@@ -5,7 +5,7 @@
     "description": "The Witching Hour is upon us!\n\nCriminality is a free roam fighting game featuring punishing and unpredictable gameplay with advanced combat mechanics and extensive weaponry. You are in SECTOR-07, the most hostile and uncontrollable sector exiled from civilized society. Arm yourselves, and prepare for the unexpected. \n\nPremium users get 30% allowance bonus! \nJoin the group for 10% extra income!\n\nNew code @ 400k likes \n\n Use !cmds in the chat to view commands in your private server"
   },
   "8343259840": {
-    "updated": "2026-11-20T21:21:54.297Z",
+    "updated": "2026-11-24T22:04:35.437Z",
     "name": "Criminality: Casual",
     "description": ""
   },
@@ -25,7 +25,7 @@
     "description": ""
   },
   "15169316384": {
-    "updated": null,
+    "updated": "2026-11-20T21:24:59.038Z",
     "name": "Criminality: M-Casual",
     "description": ""
   },
@@ -51,12 +51,12 @@
     "description": ""
   },
   "15109597882": {
-    "updated": "2026-11-22T00:02:41.961Z",
+    "updated": "2026-11-24T20:17:00.156Z",
     "name": "Criminality: DB: MAIN",
     "description": ""
   },
   "15135771643": {
-    "updated": null,
+    "updated": "2026-10-30T13:28:23.608Z",
     "name": "Criminality:DB:Casual",
     "description": ""
   },
@@ -66,7 +66,7 @@
     "15135771643"
   ],
   "15134181243": {
-    "updated": "2026-11-24T03:52:02.525Z",
+    "updated": "2026-11-24T22:24:54.104Z",
     "name": "Criminality: TZ Bench 2",
     "description": ""
   },
@@ -89,12 +89,12 @@
     "description": ""
   },
   "73891168161319": {
-    "updated": "2026-10-17T20:22:21.28Z",
+    "updated": null,
     "name": "Criminality Testing: Infection",
     "description": ""
   },
   "116462129824449": {
-    "updated": null,
+    "updated": "2026-10-31T04:38:57.477Z",
     "name": "Criminality Testing: Standard",
     "description": ""
   },
@@ -106,7 +106,7 @@
     "116462129824449"
   ],
   "18221610510": {
-    "updated": "2026-11-20T21:22:52.23Z",
+    "updated": "2026-11-24T20:35:53.358Z",
     "name": "Criminality: LDB",
     "description": ""
   },
@@ -122,7 +122,7 @@
     "132651798864647"
   ],
   "107009388501312": {
-    "updated": "2026-11-24T05:05:59.86Z",
+    "updated": "2026-11-24T23:03:35.956Z",
     "name": "Map Demo",
     "description": ""
   },
@@ -138,7 +138,7 @@
     "139752105761505"
   ],
   "129948188877122": {
-    "updated": "2026-10-21T23:46:24.199Z",
+    "updated": "2026-11-24T22:23:29.877Z",
     "name": "[MAP] 07-EXTENDED: Winter",
     "description": ""
   },
@@ -146,7 +146,7 @@
     "129948188877122"
   ],
   "113070928673202": {
-    "updated": "2026-11-22T00:02:30.835Z",
+    "updated": "2026-11-24T22:01:29.707Z",
     "name": "CrimV3: TZ Branch",
     "description": ""
   },
@@ -162,7 +162,7 @@
     "98806678518601"
   ],
   "137323373662469": {
-    "updated": "2026-11-22T15:50:48.139Z",
+    "updated": "2026-11-24T21:35:22.382Z",
     "name": "[MAP] 07-EXTENDED: V2",
     "description": ""
   },
@@ -186,7 +186,7 @@
     "117300174537731"
   ],
   "81133102802127": {
-    "updated": "2026-11-24T04:44:04.766Z",
+    "updated": "2026-11-24T22:14:15.886Z",
     "name": "Animating: nekulul",
     "description": ""
   },
@@ -194,7 +194,7 @@
     "81133102802127"
   ],
   "129199476665303": {
-    "updated": "2026-11-24T03:42:45.118Z",
+    "updated": "2026-11-24T15:02:55.695Z",
     "name": "CrimV3: Main",
     "description": ""
   },
@@ -210,7 +210,7 @@
     "118389764621848"
   ],
   "118003947305968": {
-    "updated": "2026-11-23T16:45:40.293Z",
+    "updated": "2026-11-24T20:50:12.421Z",
     "name": "CrimV3: FD Branch",
     "description": ""
   },
@@ -242,7 +242,7 @@
     "84450784359043"
   ],
   "93662270869821": {
-    "updated": "2026-11-17T04:29:35.623Z",
+    "updated": "2026-11-24T21:47:35.899Z",
     "name": "CrimV3: Sandbox",
     "description": ""
   },
@@ -258,6 +258,102 @@
     "129001805530562"
   ],
   "_eventos": [
+    {
+      "quando": "24/11/2026 20:04:10",
+      "tipo": "patch",
+      "texto": "Novo patch em UI Demo",
+      "jogo": "UI Demo"
+    },
+    {
+      "quando": "24/11/2026 20:04:08",
+      "tipo": "patch",
+      "texto": "Novo patch em CrimV3: Sandbox",
+      "jogo": "CrimV3: Sandbox"
+    },
+    {
+      "quando": "24/11/2026 20:04:03",
+      "tipo": "patch",
+      "texto": "Novo patch em CrimV3: FD Branch",
+      "jogo": "CrimV3: FD Branch"
+    },
+    {
+      "quando": "24/11/2026 20:04:00",
+      "tipo": "patch",
+      "texto": "Novo patch em CrimV3: Main",
+      "jogo": "CrimV3: Main"
+    },
+    {
+      "quando": "24/11/2026 20:03:59",
+      "tipo": "patch",
+      "texto": "Novo patch em Animating: nekulul",
+      "jogo": "Animating: nekulul"
+    },
+    {
+      "quando": "24/11/2026 20:03:55",
+      "tipo": "patch",
+      "texto": "Novo patch em [MAP] 07-EXTENDED: V2",
+      "jogo": "[MAP] 07-EXTENDED: V2"
+    },
+    {
+      "quando": "24/11/2026 20:03:53",
+      "tipo": "patch",
+      "texto": "Novo patch em CrimV3: TZ Branch",
+      "jogo": "CrimV3: TZ Branch"
+    },
+    {
+      "quando": "24/11/2026 20:03:51",
+      "tipo": "patch",
+      "texto": "Novo patch em [MAP] 07-EXTENDED: Winter",
+      "jogo": "[MAP] 07-EXTENDED: Winter"
+    },
+    {
+      "quando": "24/11/2026 20:03:49",
+      "tipo": "patch",
+      "texto": "Novo patch em Map Demo",
+      "jogo": "Map Demo"
+    },
+    {
+      "quando": "24/11/2026 20:03:46",
+      "tipo": "patch",
+      "texto": "Novo patch em Criminality: LDB",
+      "jogo": "Criminality: LDB"
+    },
+    {
+      "quando": "24/11/2026 20:03:45",
+      "tipo": "patch",
+      "texto": "Novo patch em Criminality Testing: Standard",
+      "jogo": "Criminality: Testing"
+    },
+    {
+      "quando": "24/11/2026 20:03:42",
+      "tipo": "patch",
+      "texto": "Novo patch em Criminality: TZ Bench 2",
+      "jogo": "Criminality: TZ Bench 2"
+    },
+    {
+      "quando": "24/11/2026 20:03:41",
+      "tipo": "patch",
+      "texto": "Novo patch em Criminality:DB:Casual",
+      "jogo": "Criminality: DBM"
+    },
+    {
+      "quando": "24/11/2026 20:03:40",
+      "tipo": "patch",
+      "texto": "Novo patch em Criminality: DB: MAIN",
+      "jogo": "Criminality: DBM"
+    },
+    {
+      "quando": "24/11/2026 20:03:37",
+      "tipo": "patch",
+      "texto": "Novo patch em Criminality: M-Casual",
+      "jogo": "[🎃] Criminality"
+    },
+    {
+      "quando": "24/11/2026 20:03:35",
+      "tipo": "patch",
+      "texto": "Novo patch em Criminality: Casual",
+      "jogo": "[🎃] Criminality"
+    },
     {
       "quando": "24/11/2026 10:12:18",
       "tipo": "patch",
@@ -1026,6 +1122,10 @@
       [
         1795525915,
         1489
+      ],
+      [
+        1795561414,
+        1622
       ]
     ],
     "2798935702": [
@@ -1139,6 +1239,10 @@
       ],
       [
         1795525919,
+        0
+      ],
+      [
+        1795561418,
         0
       ]
     ],
@@ -1254,6 +1358,10 @@
       [
         1795525920,
         0
+      ],
+      [
+        1795561419,
+        0
       ]
     ],
     "5215912394": [
@@ -1367,6 +1475,10 @@
       ],
       [
         1795525922,
+        0
+      ],
+      [
+        1795561421,
         0
       ]
     ],
@@ -1482,6 +1594,10 @@
       [
         1795525923,
         0
+      ],
+      [
+        1795561423,
+        0
       ]
     ],
     "6177286460": [
@@ -1595,6 +1711,10 @@
       ],
       [
         1795525926,
+        0
+      ],
+      [
+        1795561426,
         0
       ]
     ],
@@ -1710,6 +1830,10 @@
       [
         1795525927,
         0
+      ],
+      [
+        1795561427,
+        0
       ]
     ],
     "8730819865": [
@@ -1823,6 +1947,10 @@
       ],
       [
         1795525928,
+        0
+      ],
+      [
+        1795561428,
         0
       ]
     ],
@@ -1938,6 +2066,10 @@
       [
         1795525929,
         0
+      ],
+      [
+        1795561430,
+        0
       ]
     ],
     "9203886797": [
@@ -2051,6 +2183,10 @@
       ],
       [
         1795525930,
+        0
+      ],
+      [
+        1795561431,
         0
       ]
     ],
@@ -2166,6 +2302,10 @@
       [
         1795525932,
         0
+      ],
+      [
+        1795561432,
+        0
       ]
     ],
     "9591158890": [
@@ -2279,6 +2419,10 @@
       ],
       [
         1795525933,
+        0
+      ],
+      [
+        1795561433,
         0
       ]
     ],
@@ -2394,6 +2538,10 @@
       [
         1795525934,
         0
+      ],
+      [
+        1795561435,
+        0
       ]
     ],
     "9850157277": [
@@ -2507,6 +2655,10 @@
       ],
       [
         1795525935,
+        0
+      ],
+      [
+        1795561436,
         0
       ]
     ],
@@ -2622,6 +2774,10 @@
       [
         1795525936,
         0
+      ],
+      [
+        1795561437,
+        0
       ]
     ],
     "10297958549": [
@@ -2735,6 +2891,10 @@
       ],
       [
         1795525937,
+        0
+      ],
+      [
+        1795561438,
         0
       ]
     ],
@@ -2850,6 +3010,10 @@
       [
         1795525938,
         0
+      ],
+      [
+        1795561440,
+        0
       ]
     ],
     "10411487804": [
@@ -2963,6 +3127,10 @@
       ],
       [
         1795525939,
+        0
+      ],
+      [
+        1795561441,
         0
       ]
     ],
@@ -3078,6 +3246,10 @@
       [
         1795525940,
         0
+      ],
+      [
+        1795561442,
+        0
       ]
     ],
     "10767850117": [
@@ -3191,6 +3363,10 @@
       ],
       [
         1795525941,
+        0
+      ],
+      [
+        1795561443,
         0
       ]
     ],
@@ -3306,6 +3482,10 @@
       [
         1795525942,
         0
+      ],
+      [
+        1795561445,
+        0
       ]
     ],
     "10767850508": [
@@ -3419,6 +3599,10 @@
       ],
       [
         1795525943,
+        0
+      ],
+      [
+        1795561446,
         0
       ]
     ],
@@ -3534,6 +3718,10 @@
       [
         1795525944,
         0
+      ],
+      [
+        1795561447,
+        0
       ]
     ],
     "10777061104": [
@@ -3648,6 +3836,10 @@
       [
         1795525945,
         0
+      ],
+      [
+        1795561448,
+        0
       ]
     ],
     "10778469877": [
@@ -3674,13 +3866,17 @@
       [
         1795525946,
         0
+      ],
+      [
+        1795561450,
+        0
       ]
     ]
   },
   "visitas_1494262959": {
-    "visitas": 375636853,
-    "ultima": "24/11/2026 10:11:55",
-    "novas": 45989
+    "visitas": 375696779,
+    "ultima": "24/11/2026 20:03:34",
+    "novas": 59926
   },
   "visitas_2798935702": {
     "visitas": 1,
@@ -3803,7 +3999,7 @@
     "novas": null
   },
   "135296564255726": {
-    "updated": "2026-11-23T07:46:27.063Z",
+    "updated": "2026-11-24T14:21:18.988Z",
     "name": "UI Demo",
     "description": ""
   },
